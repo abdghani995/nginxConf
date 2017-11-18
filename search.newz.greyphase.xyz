@@ -1,0 +1,11 @@
+server{
+ listen 80;
+
+server_name search.newz.greyphase.xyz;
+
+location / {
+   proxy_pass  http://localhost:9200;
+
+ }
+
+}
